@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/imgs/demon-slayer-logo.png">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" integrity="sha512-n/86mxSdfFpsFtq9QYVhRlke9BQ/ZqIaRBe/dboH4l8JwBVitjpCS2HnDfbZnISV5Zq1lKONL/aQDqDQmtY/cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="build.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Demond Slayer | Season-2</title>
+
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-neutral-900">
+    <!-- nav bar -->
+    <div class="bg-neutral-600 cursor-pointer p-3 sticky top-0 z-50">
+        <div class="container mx-auto px-5 lg:px-20 flex justify-between items-center">
+            <!-- logo -->
+            <div class="flex items-center space-x-3">
+                <img class="w-14 h-14 rounded-full" src="/assets/imgs/demon-slayer-logo.png" alt="">
+                <h1 class="text-xl font-bold font-serif text-cyan-300">Demond Slayer</h1>
+            </div>
+
+            <!-- content -->
+            <div id="mobile-menu" class="flex items-center justify-center fixed lg:static top-0 lg:top-auto -right-full lg:right-auto bg-neutral-900 lg:bg-transparent h-screen lg:h-auto w-28 lg:w-auto lg:shadow-none shadow-xl shadow-slate-700 opacity-95 duration-200 z-50">
+                <!-- close icon -->
+                <div id="close-slide" class="absolute left-0 top-0 p-5 lg:hidden">
+                    <i class="fa-solid fa-angles-right text-3xl text-slate-100"></i>
+                </div>
+
+                <ul class="lg:flex lg:space-x-5 space-y-7 lg:space-y-0 text-center">
+                    <li id="mobile-slide-close" class="hover:scale-110 hover:text-cyan-600 font-bold text-cyan-300"><a href="#home">Home</a></li>
+                    <li id="mobile-slide-close" class="hover:scale-110 hover:text-cyan-600 font-bold text-cyan-300"><a href="#feature">Feature</a></li>
+                    <li id="mobile-slide-close" class="hover:scale-110 hover:text-cyan-600 font-bold text-cyan-300"><a href="#charater">Charaters</a></li>
+                    <li id="mobile-slide-close" class="hover:scale-110 hover:text-cyan-600 font-bold text-cyan-300"><a href="#overview">Overview</a></li>
+                </ul>
+            </div>
+
+            <!-- bar icon -->
+            <div id="open-slide" class="lg:hidden flex">
+                <i class="fa-solid fa-bars text-2xl text-slate-100"></i>
+            </div>
+
+
+            <!-- darkmode -->
+            <!-- <div class="scale-75">
+                <button id="dark-switch" onclick="toggleTheme()" class="shadow w-[72px] flex items-center transition duration-200 rounded-full bg-slate-800 p-1">
+                    <div id="dark-switch-icon" class="bg-slate-50 w-8 h-8 rounded-full transform transition duration-200 flex justify-center items-center">
+                        <i class="fa-regular fa-sun"></i>
+                    </div>
+                    <h6 id="dark-text" class="text-slate-200 dark:text-slate-900 translate-x-1"></h6>
+                </button>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- home -->
+    <div id="home" class="scroll">
+        <div class="container mx-auto px-5 py-20">
+            <!-- Heading -->
+            <div class="relative p-1">
+                <h1 class="lg:text-8xl text-4xl text-center mb-10 font-serif text-cyan-300">Demon Slayer</h1>
+                <h4 class="text-slate-100 text-lg absolute right-16 lg:right-72 bottom-6">Season-2</h4>
+            </div>
+
+            <div class="swiper rounded-xl lg:w-[1100px] lg:h-[300px] overflow-hidden scroll">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">  
+                    <!-- Group -->
+                  <div class="swiper-slide">
+                    <div class="">
+                        <img class="rounded-xl lg:rounded-none" src="/assets/imgs/group1.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <!-- Tanjiro -->
+                  <div class="swiper-slide">
+                    <div class="">
+                        <img class="rounded-xl lg:rounded-none" src="https://wegotthiscovered.com/wp-content/uploads/2022/10/Tanjiro-Kamado-in-Demon-Slayer.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <!-- Nezuko -->
+                  <div class="swiper-slide">
+                    <div class="">
+                        <img class="rounded-xl lg:rounded-none" src="/assets/imgs/nezuko.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <!-- Inosuke -->
+                  <div class="swiper-slide">
+                    <div class="">
+                        <img class="rounded-xl lg:rounded-none" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0c228eac-01a7-4410-892f-c9128f0141e6/dex31ci-84def487-84e3-4025-b281-99994babd275.png/v1/fill/w_1192,h_670,q_70,strp/demon_slayer___inosuke_hashibira_wallpaper_by_knotshoxtm_dex31ci-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMGMyMjhlYWMtMDFhNy00NDEwLTg5MmYtYzkxMjhmMDE0MWU2XC9kZXgzMWNpLTg0ZGVmNDg3LTg0ZTMtNDAyNS1iMjgxLTk5OTk0YmFiZDI3NS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hVrbXvvSLsr2cD2padU4MIw7hgPiZDBZNdHFPgpSK4g" alt="">
+                    </div>
+                  </div>
+
+                  <!-- Zenitsu -->
+                  <div class="swiper-slide">
+                    <div class="">
+                        <img class="rounded-xl lg:rounded-none" src="https://staticg.sportskeeda.com/editor/2022/01/9441c-16419200856280-1920.jpg" alt="">
+                    </div>
+                  </div> 
+
+                    <!-- Tengen -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <img class="rounded-xl lg:rounded-none" src="https://www.thenewsfetcher.com/wp-content/uploads/2021/10/IMG_20211029_022812-1536x862.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+              
+              </div>
+              
+        </div>
+    </div>
+
+     <!-- download section -->
+    <div id="feature" class="container mx-auto px-5 grid lg:grid-cols-4 grid-cols-2 gap-5 py-10 scroll">
+        <div class="text-center text-slate-100">
+            <h2 class="">400M+</h2>
+            <h4 class="">Downloads</h4>
+        </div>
+        <div class="text-center text-slate-100">
+            <h2 class="">300M+</h2>
+            <h4 class="">Like</h4>
+        </div>
+        <div class="text-center text-slate-100">
+            <h2 class="">500M+</h2>
+            <h4 class="">Share</h4>
+        </div>
+        <div class="text-center text-slate-100">
+            <h2 class="">600M+</h2>
+            <h4 class="">views</h4>
+        </div>
+    </div>
+
+    <!-- video section -->
+    <div class="bg-neutral-700">
+        <div class="container mx-auto px-5 lg:px-20 space-y-5 py-10">
+            <div class="">
+                <h1 class="text-slate-100 text-3xl lg:text-4xl mb-3 scroll">Demon Slayer: Kimetsu no Yaiba Season-2 Opening full</h1>
+                <h4 class="text-slate-300 mb-10 scroll">Aimer - Zankyou Sanka</h4>
+            </div>
+            
+            <div class="">
+                <h1 class="text-xl text-slate-100 scroll">You can listen to the season-2 theme song at the youtube link below</h1>
+                <div class="flex items-center mt-3">
+                    <h2 class="text-slate-100 text-2xl scroll">Click logo here:</h2>
+                    <i class="fa-solid fa-arrow-turn-down text-3xl text-slate-400"></i>
+                </div> 
+            </div>
+
+            <div class=" flex items-center space-x-2 scroll">
+                <a href="https://youtu.be/29HeGGW-fm8" target="_blank" class="bg-[#ff0000] hover:bg-red-500 text-slate-100 py-3 px-8 rounded-xl"><i class="fa-solid fa-play"></i></a>
+                <h1 class="text-2xl text-slate-100">YouTube</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- video section -->
+    <div class="bg-neutral-600">
+        <div class="container mx-auto px-5 lg:px-20 space-y-5 py-10">
+            <div class="">
+                <h1 class="text-slate-100 text-3xl lg:text-4xl mb-3 scroll">Demon Slayer-Season-2 mm sub</h1>
+                <h4 class="text-slate-300 mb-10 scroll">Complete</h4>
+            </div>
+            
+            <div class="">
+                <h1 class="text-xl text-slate-100 scroll">If you wanna watch it,you can watch from start to finish at the end telegram link below</h1>
+                <div class="flex items-center mt-3">
+                    <h2 class="text-slate-100 text-2xl scroll">Click logo here:</h2>
+                    <i class="fa-solid fa-arrow-turn-down text-3xl text-slate-400"></i>
+                </div> 
+            </div>
+
+            <div class=" flex items-center space-x-2 scroll">
+                <a href="https://t.me/demon_slayer_mm_sub_channel" target="_blank"><img class="w-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt=""></a>
+                <h1 class="text-2xl text-slate-100">Telegram</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- charater section -->
+    <div id="charater" class="">
+
+        <div class="container mx-auto px-5 lg:px-20 py-20">
+            <!-- heading -->
+            <div class="text-slate-100 text-start lg:text-center mb-10">
+                <h1 class="text-4xl mb-3 scroll">Demon Slayer Hashira ranking</h1>
+                <p class="text-lg scroll">Who is the strongest in the Demon Slayer Corps?</p>
+            </div>
+
+            <!-- card -->
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="bg-stone-800 p-4 space-y-3 rounded-xl scroll">
+                    <img class="rounded-xl w-auto" src="https://cdn.oneesports.gg/cdn-data/2023/01/Anime_DemonSlayer_AllHashira_2.jpg" alt="">
+                    <div class="space-y-5">
+                        <h3 class="font-bold text-xl text-slate-100">Group</h3>
+                        <p class="text-slate-300">Beloved heroes Tanjiro Kamado,Zenitsu Agatsuma,and Inosuke Hashibira are among their number,but they’re far from the group’s most powerful members.</p>
+                        <div class="">
+                            <a href="http://shorturl.at/dhEJ8" target="_blank" rel="noopener noreferrer" class="bg-orange-900 p-2 px-10 rounded-lg text-slate-100 font-bold hover:bg-orange-700">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800 p-4 space-y-3 rounded-xl scroll">
+                    <img class="rounded-xl w-auto" src="https://www.looper.com/img/gallery/demon-slayer-tanjiros-powers-explained/intro-1620401706.webp" alt="">
+                    <div class="space-y-5">
+                        <h3 class="font-bold text-xl text-slate-100">Tanjiro Kamado</h3>
+                        <p class="text-slate-300">Tanjiro returns to Nezuko, who is sleeping to recover and internally apologizes to her for not finding a solution to turn her back fast enough.</p>
+                        <div class="">
+                            <a href="http://shorturl.at/dhEJ8" target="_blank" rel="noopener noreferrer" class="bg-orange-900 p-2 px-10 rounded-lg text-slate-100 font-bold hover:bg-orange-700">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800 p-4 space-y-3 rounded-xl scroll">
+                    <img class="rounded-xl w-auto" src="https://cdn.shopify.com/s/files/1/0557/5868/4333/products/DemonSlayer-KimetsunoYaiba-TheHinokamiChronicles-SwitchAnnounce_6_592x333.png?v=1645034561" alt="">
+                    <div class="space-y-5">
+                        <h3 class="font-bold text-xl text-slate-100">Nezuko Kamado</h3>
+                        <p class="text-slate-300">Nezuko grew up on a mountain alongside her older brother, Tanjiro, and the rest of her siblings and mother, as the eldest daughter of the Kamado family.</p>
+                        <div class="">
+                            <a href="http://shorturl.at/dhEJ8" target="_blank" rel="noopener noreferrer" class="bg-orange-900 p-2 px-10 rounded-lg text-slate-100 font-bold hover:bg-orange-700">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800 p-4 space-y-3 rounded-xl scroll">
+                    <img class="rounded-xl w-auto" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0c228eac-01a7-4410-892f-c9128f0141e6/dex31ci-84def487-84e3-4025-b281-99994babd275.png/v1/fill/w_1192,h_670,q_70,strp/demon_slayer___inosuke_hashibira_wallpaper_by_knotshoxtm_dex31ci-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMGMyMjhlYWMtMDFhNy00NDEwLTg5MmYtYzkxMjhmMDE0MWU2XC9kZXgzMWNpLTg0ZGVmNDg3LTg0ZTMtNDAyNS1iMjgxLTk5OTk0YmFiZDI3NS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hVrbXvvSLsr2cD2padU4MIw7hgPiZDBZNdHFPgpSK4g" alt="">
+                    <div class="space-y-5">
+                        <h3 class="font-bold text-xl text-slate-100">Inosuke Hashibira</h3>
+                        <p class="text-slate-300">Inosuke has always had a weird relationship with humanity. Because he was raised by boars, he does not have much understanding of normal human.</p>
+                        <div class="">
+                            <a href="http://shorturl.at/dhEJ8" target="_blank" rel="noopener noreferrer" class="bg-orange-900 p-2 px-10 rounded-lg text-slate-100 font-bold hover:bg-orange-700">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800 p-4 space-y-3 rounded-xl scroll">
+                    <img class="rounded-xl w-auto" src="https://staticg.sportskeeda.com/editor/2022/01/9441c-16419200856280-1920.jpg" alt="">
+                    <div class="space-y-5">
+                        <h3 class="font-bold text-xl text-slate-100">Zenitsu Agatsuma</h3>
+                        <p class="text-slate-200">A perfect example is him protecting Nezuko’s box from Inosuke Hashibira, despite knowing there’s a demon inside because he knows it’s vital to Tanjiro.</p>
+                        <div class="">
+                            <a href="http://shorturl.at/dhEJ8" target="_blank" rel="noopener noreferrer" class="bg-orange-900 p-2 px-10 rounded-lg text-slate-100 font-bold hover:bg-orange-700">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800 p-4 space-y-3 rounded-xl scroll">
+                    <img class="rounded-xl lg:rounded-none" src="https://repository-images.githubusercontent.com/453312616/93bbd981-acab-4c65-af3f-496862aab48c" alt="">
+                        <div class="space-y-5">
+                            <h3 class="font-bold text-xl text-slate-100">Tengen Uzui</h3>
+                            <p class="text-slate-200">Tengen Uzui is an oddball who loves doing all his acts in a showy manner. He has demonstrated an unwavering and commanding attitude toward others.</p>
+                            <div class="">
+                                <a href="http://shorturl.at/dhEJ8" target="_blank" rel="noopener noreferrer" class="bg-orange-900 p-2 px-10 rounded-lg text-slate-100 font-bold hover:bg-orange-700">Info</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Overview section -->
+    <div id="overview" class="container mx-auto px-5 lg:px-20 py-10">
+        <div class="">
+            <p class="text-slate-100 text-lg mb-8 scroll">
+                And just like that, Demon Slayer Season 2 is already over. The latest season of the popular franchise was pretty inconsistent in many ways, but it did guarantee a ton of fun for the time it was there. Let’s see what the entire season was like in this review!
+            </p>
+
+            <!-- start overview -->
+            <div class="">
+                <!-- first -->
+                <div class="space-y-5">
+                    <h1 class="text-slate-100 text-xl lg:text-3xl font-bold mt-10 scroll">Demon Slayer Season 2 Overview</h1>
+                    <img class="w-[700px] scroll" src="https://www.leisurebyte.com/wp-content/uploads/2022/02/Screenshot-4197-1024x576.jpg" alt="">
+                    <p class="text-lg text-slate-100 mb-10 scroll">
+                        One of the most popular anime of our time, Demon Slayer, was back on our screens with the Entertainment District Arc. The newest series followed the 7 episode retelling of the Mugen Train Movie, which you can read all about <a class="text-yellow-500 underline italic" href="https://www.leisurebyte.com/tag/demon-slayer-mugen-train/" target="_blank" rel="noopener noreferrer">here</a>. The arc followed Tanjirou, Zenitsu, and Inosuke, aided by the Sound Hashira Tengen Uzui, as they travelled to Yoshiwara red-light district to hunt down a demon terrorising the town.
+                    </p>
+                    <p class="text-lg text-slate-100 scroll">
+                        Ufotable is the studio behind <a class="text-yellow-500 underline italic" href="https://demonslayer-anime.com/mugentrainarc/staff-cast/" target="_blank" rel="noopener noreferrer">Demon Slayer’s anime adaptation</a>, and Haruo Sotozaki directed the series. It is to be noted that only the first episode was a double-length episode, followed by standard episodes for the rest of the series, including a slightly longer finale. You can read <a class="text-yellow-500 underline italic" href="https://www.leisurebyte.com/demon-slayer-mugen-train-review/" target="_blank" rel="noopener noreferrer">our review of the Mugen Train movie</a> while you’re at it or our review of the <a class="text-yellow-500 underline italic" href="https://www.leisurebyte.com/demon-slayer-season-2-episode-11-review/" target="_blank" rel="noopener noreferrer">last episode of this arc</a> if you’d like. The series is also known as Kimetsu no Yaiba Yuukaku-hen in original Japanese.
+                    </p>
+                </div>
+
+                <!-- second -->
+                <div class="space-y-5">
+                    <h1 class="text-xl text-slate-300 text-center mt-10 font-bold scroll">– Demon Slayer Entertainment District Arc Review does not contain spoilers –</h1>
+                    <h2 class="text-slate-100 text-xl lg:text-3xl font-bold mt-10 scroll">Demon Slayer Kimetsu No Yaiba Season 2 Review- The Plot</h2>
+
+                    <img class="w-[700px] scroll" src="https://www.leisurebyte.com/wp-content/uploads/2021/12/Screenshot-2960-1024x576-1.jpg" alt="">
+
+                    <p class="text-lg text-slate-100 scroll">
+                        If there’s one element of the latest Demon Slayer Season that deserves to be complained about, it is this one. The season started out with extremely high expectations surrounding it, as it was following a universally well-received movie and TV anime series. Anything worse than perfection would net at least some criticism. This is an unfair ask but unfortunately, exactly how hype works in this day and age. This season was never going to be perfect, but was it at least good enough?
+                    </p>
+
+                    <p class="text-lg text-slate-100 scroll">
+                        Where the plot is concerned, not really. The series started in an extremely weird way, where a Hashira of all people was kidnapping a girl to be used as an espionage tool, and Tanjiro, Zenitsu, and Inosuke just happened to be there at the time and volunteered to go in the girl’s stead. A girl, who for all we know didn’t even know how to fight, was to be taken into the den of a Demon who has killed several thousand people. The coincidental nature of the plot was bad enough on its own, but that start didn’t do much for the first impression of an important character.
+                    </p>
+
+                    <img class="w-[700px] scroll" src="https://www.leisurebyte.com/wp-content/uploads/2021/12/Demon-4-9-1024x576-1.jpg" alt="">
+
+                    <p class="text-lg text-slate-100 scroll">
+                        Believe it or not, the series got even weirder from that point. How the show tried to acclimate the characters to the Red Light District was weird at best and off-putting at worst. The show wanted to be sinister and jovial simultaneously, and the combination of both didn’t work as intended. The result of this ended up being that the show didn’t hit its stride until it dropped the hilarity towards the end and became serious, which has always been a strong aspect of the show and one that Demon Slayer should use way more than it is.
+                    </p>
+
+                    <p class="text-lg text-slate-100 scroll">
+                        However, we did see some fantastic episodes in the end stretch, but the plot wasn’t what made them good. One can even say that the plot held that excellent stretch down, as the final battle was full of powers that came out of nowhere and the almost always useless villain history exposition. Demon Slayer Season 2 explored some nice parallels between Tanjiro and Nezuko alongside the villain of the series, Daki. That and the exploration of Tanjiro’s weird powers saved this season’s plot from being a complete miss, but only barely so. If we had a Demon Slayer Season 2 Episode 12, maybe things could have been better explored.
+                    </p>
+
+                    <img class="w-[700px] scroll" src="https://www.leisurebyte.com/wp-content/uploads/2022/01/Demon-7-7-1024x576-1.jpg" alt="">
+
+                    <p class="text-lg text-slate-100 scroll">
+                        The biggest culprit in the plot not being good might just have been the weird length of the season. Casting how you feel about the (cash grab greedy corporate trash) Mugen Train Anime Arc aside, making this season just 11 episodes was an extremely weird decision. The way it ended also reminded one more of a mid-season break rather than a full-on “see you next year”. The Demon Slayer Red Light District Arc wasn’t a good enough arc to carry an entire season, and it needed a supplemental arc to be acceptable. Imagine if season 1 ended just as Tanjiro met Inosuke and Zenitsu. That’s how this felt, and it wasn’t good.
+                    </p>
+
+                </div>
+
+                <!-- third -->
+                <div class="space-y-5">
+                    <h1 class="text-slate-100 text-xl lg:text-3xl font-bold mt-10 scroll">Demon Slayer Season 2 Review- The Characters</h1>
+                    <img class="w-[700px] scroll" src="https://www.leisurebyte.com/wp-content/uploads/2021/12/Screenshot-3133-1024x576.png" alt="">
+
+                    <p class="text-lg text-slate-100 scroll">
+                        This season was also a mixed bag in character development, but the balance was much better than the plot. Demon Slayer Season 2 managed to resurrect one of its dud characters spectacularly. Inosuke was a revelation in this entire season, being one of the best things about it. He has grown up a lot from his annoying roots to become a solid character than can handle his own, and it is awesome to see it happen. Tanjiro and Nezuko’s relationship was also a huge part of this season, and it worked really well.
+                    </p>
+
+                    <p class="text-lg text-slate-100 scroll">
+                        Zenitsu is still the worst character in the show, and it isn’t close. He remains just as annoying and unwatchable as ever. The new characters introduced are Tengen Uzui, the Sound Hashira and his three wives, alongside the villain Daki. Tengen is as generic as they come, as he’s the usual flamboyant character trope that many anime have. Him being a ninja alongside that is unique, but the show doesn’t do enough with the fact to make that anything but a footnote. You will probably forget about his wives as soon as Demon Slayer Season 2 ends, and no one will blame you. Generic is the word.
+                    </p>
+
+                    <img class="w-[700px] scroll" src="https://www.leisurebyte.com/wp-content/uploads/2021/12/Screenshot-3316-1024x576.jpg" alt="">
+                    
+                    <p class="text-lg text-slate-100 scroll">
+                        Daki, on the other hand, is a pretty solid villain and one of Demon Slayer‘s better ones so far. As already mentioned, there are some great parallels in Demon Slayer Season 2 with her and the main characters’ story, and the show explores them enough for it to feel substantial. She is also strong enough to make the fights against her extremely exciting, which is what really matters in a show such as this. The show did do the “Boohoo Demon Life Sad” trope in this season, but it worked better here than it did earlier.
+                    </p>
+                </div>
+
+                <div class="space-y-5">
+                    <h1 class="text-slate-100 text-xl lg:text-3xl font-bold mt-10 scroll">Demon Slayer Season 2 Review- Animation and Music</h1>
+                    <!-- image -->
+                    <div class="grid grid-cols-3 w-auto lg:w-[700px] gap-3 scroll">
+                        <img src="https://www.leisurebyte.com/wp-content/uploads/2022/02/2022-02-06-22_10_56-Netflix-%E2%80%94-Mozilla-Firefox-1536x864-1.jpg" alt="">
+                        <img src="https://www.leisurebyte.com/wp-content/uploads/2022/01/Screenshot-3812-1536x864.jpg" alt="">
+                        <img src="https://www.leisurebyte.com/wp-content/uploads/2021/12/Demon-Slayer-Season-2-Episode-2.jpg" alt="">
+                        
+                        <div class="grid grid-cols-2 col-span-3 gap-3">
+                            <img src="https://www.leisurebyte.com/wp-content/uploads/2022/01/Demon-5-9-1536x864-1.jpg" alt="">
+                            <img src="https://www.leisurebyte.com/wp-content/uploads/2022/01/Demon-8-4-1536x864-1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-slate-100 scroll">
+                        We are getting near the levels of perfection in these aspects, and no one would be surprised if Demon Slayer Season 2 was the show that took us there. This season looked like a dream in how high quality it was. The animation in the series has always been tremendous, as are most other works by Ufotable, but this was on a level of its own. The environments, the colouring, the lights, and most of all, the battle sequences looked phenomenal. Animation doesn’t get any better than this.
+                    </p>
+
+                    <p class="text-lg text-slate-100 scroll">
+                        The music of Demon Slayer Season 2 was also great. The OSTs sounded beautiful and fit the entire vibe of the Entertainment District very well. We have seen Red Light Districts done well in many anime, and while Demon Slayer‘s interpretation was nowhere near the best version, it was still very good. The opening saw somebody other than LiSA do insert music for the show for the first time, and while Aimer did a great job with the opening, the show was still missing something without LiSA. The animation in the opening sequence was breathtaking, however.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- summery -->
+    <div class="container mx-auto px-5 lg:px-20 py-10 space-y-5">
+        <h1 class="text-slate-100 text-3xl font-bold scroll">Summery</h1>
+        <p class="text-lg text-slate-100 scroll">
+            <em>Demon Slayer Season 2 </em>was too short and incomplete for it to be able to be as good as what came before, but the mind-blowing animation, music and fight sequences did a lot in softening that blow. It was a good season, just not as good as it could have been. Let’s just hope Demon Slayer Season 3 is a full length one.
+        </p>
+    </div>
+
+    <footer class="bg-neutral-800">
+        <div class="container mx-auto px-5 lg:px-20 py-10 grid lg:grid-cols-2 items-center space-y-10 lg:space-y-0">
+            <h1 class="text-slate-100 text-center lg:text-start scroll">© 2023 Wai Yan Hein | All Rights Reserved</h1>
+            <!-- contact -->
+            <div class="">
+
+                <div class="flex space-x-7 items-center lg:justify-end justify-center">
+                    <a class="scroll" href="https://www.facebook.com/profile.php?id=100080279465831&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/44/44646.png" height="32" width="32" alt=""></a>
+                    <a href="https://github.com/waiyanhein01" target="_blank" rel="noopener noreferrer">
+                        <div class="scroll">
+                            <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="scroll" href="https://www.tiktok.com/@lyricyann?_t=8aFYUSwN6GY&_r=1" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/4138/4138151.png" height="36" width="36" alt=""></a>
+                </div>
+
+                <h1 class="font-bold text-lg mt-3 lg:text-end text-center scroll">Contact me:</h1>
+                <h1 class="font-bold text-lg lg:text-end text-center scroll">wyan00196@gmail.com</h1>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="/node_modules/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js" integrity="sha512-sR63/L3Slqn0OWMMafv7gmRGxkYJOcfgdN3jznwea9NYiett6R+cGdZ0t0TRHeH1gZogMyLE1oQpQ0Lc6ULKbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/main.js"></script>
+
+</body>
+
+</html>
